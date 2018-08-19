@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Main</title>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html;" >
+</head>
+
+<body>
+
+<div style="text-align: center;"><h3>Hello, <label id="target">World</label>!</h3></div>
+
+<form method="post" action="javascript:getName()">
+    <label>
+        <input type="text" id="name" value="" />
+    </label>
+    <label>
+        <input type="submit" />
+    </label>
+</form>
+
+<script>
+    function getName() {
+        document.getElementById('target').innerText = document.getElementById('name').value;
+    }
+</script>
+</body>
+
+</html>
